@@ -62,13 +62,13 @@ body {
 #welcome-section h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 5pt;
-    font-size: 39pt;
+    font-size: calc(30px + 7vmin);
     margin-bottom: 25px;
 }
 
 #welcome-section h3 {
     margin-top: 0;
-    font-size: 22pt;
+    font-size: calc(10px + 4vmin);
 }
 
 #background_container {
@@ -86,8 +86,19 @@ body {
     filter: grayscale(10%) brightness(35%);
 }
 
+#portfolio-title {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: auto; 
+    height: 200px; 
+    color: rgb(57, 57, 57);
+    font-size: calc(15px + 5vmin);
+}
+
 #projects {
     padding: 50px;
+    padding-top: 10px; 
     display: grid;
     grid-gap: 50px;
     
@@ -157,6 +168,10 @@ body {
     animation-fill-mode: forwards;
 }
 
+#blog-link {
+    color: blue; 
+}
+
 @keyframes download-button {
     0% {
         color: black;
@@ -170,19 +185,22 @@ body {
 
 #contact {
     margin-top: 25px; 
-    height: 200px; 
-    background: rgba(77, 77, 77, 0.461);
-
-
+    min-height: 150px; 
+    background-color:  rgba(77, 77, 77, 0.461);
 }
 
 #contact div {
+    position: relative;
+    top: 60px; 
     height: 100%;
     margin: auto; 
+    margin-left: 30px; 
+    margin-right: 30px; 
     display: flex; 
     justify-content: space-between; 
+    align-content: center; 
     flex-flow: row nowrap; 
-    max-width: 700px;
+    /* max-width: 700px; */
 }
 
 #contact a {
@@ -196,20 +214,10 @@ body {
     align-items: center; 
 }
 
-#contact ul {
-    list-style: none; 
-}
-
-#contact li {
-    margin-left: 50px; 
-    margin-right: 50px; 
-    display: inline-block; 
-}
-
-@media (max-width:700px) {
+@media (max-width:900px) {
 
     #navbar a {
-        font-size: 14pt; 
+        font-size: 16pt; 
     }
 
     #navbar li {
@@ -220,6 +228,42 @@ body {
     #contact a {
         margin-left: 20px; 
         margin-right: 20px; 
-        font-size: 14pt; 
+        font-size: 16pt; 
+    }
+
+}
+
+@media (max-width:700px) {
+    #contact {
+        /* margin-top: 25px;  */
+        min-height: 300px; 
+        background-color:  rgba(77, 77, 77, 0.461);
+    }
+    
+    #contact div {
+        position: static; 
+        margin: auto; 
+        height: 300px;
+        display: flex; 
+        justify-content: space-between; 
+        align-content: center; 
+        flex-flow: column nowrap; 
+        /* max-width: 700px; */
+    }
+    
+    #contact a {
+        text-decoration: none; 
+        color: white; 
+        font-size: 18pt; 
+        font-weight: bold; 
+        text-align: center; 
+        vertical-align: center; 
+    
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+
+        margin-top: 20px; 
+        margin-bottom: 10px; 
     }
 }
