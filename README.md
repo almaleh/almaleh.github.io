@@ -1,4 +1,7 @@
 # almaleh.github.io
-Portfolio Projects
+
+## Besher Al Maleh
+
+### Portfolio Projects
 
 This website contains a summary of my programming projects. 
