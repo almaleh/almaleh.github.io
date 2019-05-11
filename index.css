@@ -19,6 +19,10 @@ body {
     overflow-x: hidden;
 }
 
+.button:focus {
+    outline: 0 !important;
+  }
+
 #welcome-section {
     color: white;
     height: 100vh;
@@ -29,6 +33,7 @@ body {
 }
 
 #navbar-container {
+    z-index: 99;
     position: fixed;
     top: 0;
     background: white;
@@ -54,6 +59,10 @@ body {
     display: inline-block;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+#navbar li:hover {
+    opacity: 0.5;
 }
 
 #navbar a {
@@ -113,7 +122,7 @@ body {
     margin-right: 20px;
     margin-left: 20px;
     color: white;
-    transition: all 0.2s ease-out;
+    transition: all 0.15s ease-out;
 }
 
 .icon:hover {
@@ -165,11 +174,10 @@ body {
     width: 240px;
     min-width: 200px;
     border-radius: 15px;
-    transition: all .2s ease-out;
+    transition: all .15s ease-out;
 }
 
 .project-image:hover {
-    opacity: 0.9;
     transform: scale(1.05, 1.05);
 }
 
@@ -189,23 +197,14 @@ body {
     min-width: 200px;
 }
 
-.project-button {
-    margin: 20px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    width: 180px;
-    height: 40px;
-    font-size: 13pt;
-}
-
 .appstore-button {
     border: none;
     background: none;
-    transition: all .15s ease-out;
+    transition: all .05s ease-out;
 }
 
 .appstore-button:hover {
-    opacity: 0.7;
+    filter: invert(1);
 }
 
 .appstore-button img {
@@ -213,30 +212,39 @@ body {
     height: auto;
 }
 
-.project-button a {
-    text-decoration: none;
-    color: black;
+.project-button {
+    margin: 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    width: 180px;
+    height: 55px; 
+    font-size: 15pt;
+    border: none; 
+    cursor: pointer;
+    color: black; 
+    background: white; 
+    transition: all .15s ease-out;
+}
+
+.project-button p {
+    font-weight: bold;
 }
 
 .project-button:hover {
-    animation-name: download-button;
-    animation-duration: 0.25s;
-    animation-fill-mode: forwards;
+    background: rgb(186, 186, 186);
+}
+
+.project-button:active {
+    color: white;
+    background: rgb(186, 186, 186);
 }
 
 #blog-link {
     color: blue;
 }
 
-@keyframes download-button {
-    0% {
-        color: black;
-        background: white;
-    }
-    100% {
-        color: white;
-        background: rgb(186, 186, 186);
-    }
+#blog-link:hover {
+    opacity: 0.5;
 }
 
 #contact {
@@ -256,7 +264,6 @@ body {
     justify-content: space-between;
     align-content: center;
     flex-flow: row nowrap;
-    /* max-width: 700px; */
 }
 
 #contact a {
@@ -269,13 +276,16 @@ body {
     align-items: center;
 }
 
+#contact a:hover {
+    opacity: 0.7;
+}
+
 @media screen and (max-width:900px) {
     #navbar a {
         font-size: 16pt;
     }
     #navbar li {
         margin-left: 20px;
-        /* margin-right: 20px;  */
     }
     #contact a {
         margin-left: 20px;
@@ -290,7 +300,6 @@ body {
         padding-right: 0px;
     }
     #contact {
-        /* margin-top: 25px;  */
         min-height: 300px;
         background-color: rgba(77, 77, 77, 0.461);
     }
@@ -302,7 +311,6 @@ body {
         justify-content: space-between;
         align-content: center;
         flex-flow: column nowrap;
-        /* max-width: 700px; */
     }
     #contact a {
         text-decoration: none;
@@ -319,12 +327,6 @@ body {
     }
 }
 
-@media screen and (max-width:800px) {
-    /* #title_background {
-        display: none;
-    } */
-}
-
 @media screen and (max-width:470px) {
     #navbar li {
         font-size: 14pt;
@@ -337,11 +339,5 @@ body {
     #projects {
         padding: 10px;
         padding-top: 10px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    #background-container::before {
-        position: absolute;
     }
 }
