@@ -1,6 +1,7 @@
 html {
     background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(191, 191, 191));
     background-attachment: fixed;
+    cursor: default;
 }
 
 * {
@@ -55,14 +56,14 @@ body {
     list-style: none;
 }
 
+#navbar ul a:hover {
+    opacity: 0.5;
+} 
+
 #navbar li {
     display: inline-block;
     margin-left: 50px;
     margin-right: 50px;
-}
-
-#navbar li:hover {
-    opacity: 0.5;
 }
 
 #navbar a {
