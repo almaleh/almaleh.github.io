@@ -151,7 +151,7 @@ body {
 
 .project-tile {
     color: rgb(34, 34, 34);
-    line-height: 18pt;
+    line-height: 26pt;
     padding: 40px;
     padding-top: 10px;
     padding-bottom: 25px;
@@ -176,6 +176,10 @@ body {
     min-width: 200px;
     border-radius: 15px;
     transition: all .15s ease-out;
+}
+
+.less-round { 
+    border-radius: 5px;
 }
 
 .project-image:hover {
