@@ -142,8 +142,8 @@ body {
 }
 
 #projects {
-    padding: 50px;
-    padding-top: 10px;
+    margin: 100px; 
+    margin-top: 10px; 
     display: grid;
     grid-gap: 100px;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -191,7 +191,6 @@ body {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    /* width: 260px; */
     min-width: 260px;
 }
 
@@ -200,7 +199,6 @@ body {
     margin: auto;
     margin-top: 25px;
     width: 240px;
-    /* min-width: 240px; */
 }
 
 .button {
