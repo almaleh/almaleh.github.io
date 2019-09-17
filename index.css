@@ -145,8 +145,8 @@ body {
     padding: 50px;
     padding-top: 10px;
     display: grid;
-    grid-gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(500px, 1fr));
 }
 
@@ -191,8 +191,8 @@ body {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 260px;
-    min-width: 200px;
+    /* width: 260px; */
+    min-width: 260px;
 }
 
 .project-description-list {
@@ -200,7 +200,11 @@ body {
     margin: auto;
     margin-top: 25px;
     width: 240px;
-    min-width: 200px;
+    /* min-width: 240px; */
+}
+
+.button {
+    margin-bottom: 20px; 
 }
 
 .appstore-button {
@@ -220,7 +224,6 @@ body {
 
 .project-button {
     margin: 20px;
-    margin-bottom: 10px;
     border-radius: 6px;
     width: 180px;
     height: 55px; 
