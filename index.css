@@ -340,11 +340,24 @@ body {
         margin-left: 10px;
         margin-right: 15px;
     }
+
+    #projects {
+        margin: 0px; 
+        margin-top: 10px; 
+        display: grid;
+        grid-gap: 40px;
+    }
 }
 
 @media screen and (max-width: 400px) {
     #projects {
         padding: 10px;
         padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    #projects {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
