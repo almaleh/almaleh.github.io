@@ -171,7 +171,7 @@ body {
 }
 
 .project-image {
-    margin: 20px;
+    margin: 15px;
     height: auto;
     width: 240px;
     min-width: 200px;
@@ -246,11 +246,11 @@ body {
     background: rgb(186, 186, 186);
 }
 
-#blog-link {
-    color: blue;
+.blog-link {
+    color: rgb(0, 123, 255);
 }
 
-#blog-link:hover {
+.blog-link:hover {
     opacity: 0.5;
 }
 
